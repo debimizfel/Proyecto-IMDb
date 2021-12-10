@@ -22,8 +22,10 @@ class PopularesProvider extends ChangeNotifier {
           'https://api.themoviedb.org/3/movie/popular?api_key=0e685fd77fb3d76874a3ac26e0db8a4b&language=en-US&page=1');
 
       final json = response.data['results'];
+
       var listadoPeliculas =
           json.map((peliculaJson) => Pelicula.fromJson(peliculaJson)).toList();
+
       print('SI SE PUDO DE POPULARES');
       var listPeliculas = List<Pelicula>.from(listadoPeliculas);
       setPeliculas(listPeliculas);

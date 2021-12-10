@@ -6,6 +6,7 @@ class MasVistasProvider extends ChangeNotifier {
   List<Pelicula> _peliculas = [];
 
   List<Pelicula> get peliculas => _peliculas;
+
   void setPeliculas(List<Pelicula> peliculas) {
     _peliculas = peliculas;
     notifyListeners();
