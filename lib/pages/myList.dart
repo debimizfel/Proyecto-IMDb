@@ -1,4 +1,3 @@
-import 'package:addicts_movies/pages/peliculas.dart';
 import 'package:addicts_movies/service/myList_servicio.dart';
 import 'package:addicts_movies/widgets/myList_w.dart';
 import 'package:flutter/material.dart';

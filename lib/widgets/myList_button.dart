@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class MyListBtn extends StatefulWidget {
-  const MyListBtn({Key key, this.pelicula}) : super(key: key);
+  const MyListBtn({Key? key, required this.pelicula}) : super(key: key);
   final Pelicula pelicula;
 
   @override

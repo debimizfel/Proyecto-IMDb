@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import 'myList_button.dart';
 
 class SearchWidget extends StatelessWidget {
-  const SearchWidget({Key key, this.pelicula});
+  const SearchWidget({Key? key, required this.pelicula});
 
   final Pelicula pelicula;
 
@@ -64,7 +64,7 @@ class SearchWidget extends StatelessWidget {
                   : AssetImage(
                       'assets/images/no_disponible.jpg',
                       // height: 90,
-                    ),
+                    ) as ImageProvider,
               fit: BoxFit.cover,
             ),
           ),

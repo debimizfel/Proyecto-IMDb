@@ -5,11 +5,11 @@ import 'models/clase_Pelicula.dart';
 //llego desde la pantalla principal apretando alguna plataforma
 class Mantenimiento extends StatelessWidget {
   const Mantenimiento({
-    this.pelicula,
-    Key key,
+   this.pelicula,
+    Key? key,
   }) : super(key: key);
 
-  final Pelicula pelicula;
+  final Pelicula? pelicula;
 
   @override
   Widget build(BuildContext context) {

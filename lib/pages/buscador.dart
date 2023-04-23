@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import '../mantenimiento.dart';
 
 class Buscador extends StatefulWidget {
-  Buscador({Key key}) : super(key: key);
+  Buscador({Key? key}) : super(key: key);
 
   @override
   _BuscadorState createState() => _BuscadorState();

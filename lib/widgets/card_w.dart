@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'myList_button.dart';
 
 class CardWidget extends StatelessWidget {
-  const CardWidget({this.pelicula, Key key}) : super(key: key);
+  const CardWidget({required this.pelicula, Key? key}) : super(key: key);
 
   final Pelicula pelicula;
 
@@ -17,7 +17,7 @@ class CardWidget extends StatelessWidget {
           Container(
             height: 100,
             width: 70,
-            child: FadeInImage(
+            child:  FadeInImage(
               placeholder: AssetImage(
                 'assets/images/loading.gif',
               ),
@@ -30,7 +30,7 @@ class CardWidget extends StatelessWidget {
                   : AssetImage(
                       'assets/images/no_disponible.jpg',
                       // height: 90,
-                    ),
+                    )as ImageProvider,
               fit: BoxFit.cover,
             ),
           ),

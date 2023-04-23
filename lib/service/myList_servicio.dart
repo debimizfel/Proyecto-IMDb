@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:addicts_movies/models/clase_Pelicula.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -46,10 +45,10 @@ class MyListProvider extends ChangeNotifier {
 
   Future<void> setPreference() async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
-    if (preferences?.getStringList('myList')?.isEmpty ?? true) {
+    if (preferences.getStringList('myList')?.isEmpty ?? true) {
       preferences.setStringList('myList', []);
     } else {
-      listaPelis = preferences.getStringList('myList').map(
+      listaPelis = preferences.getStringList('myList')!.map(
         (e) {
           return Pelicula.fromMyJson(jsonDecode(e));
         },

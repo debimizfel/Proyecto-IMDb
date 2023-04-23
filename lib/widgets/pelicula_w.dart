@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 // poner los titulos del lado izquierdo
 
 class PeliculaWidget extends StatelessWidget {
-  const PeliculaWidget({this.pelicula});
+  const PeliculaWidget({required this.pelicula});
 
   final Pelicula pelicula;
 
@@ -52,7 +52,7 @@ class PeliculaWidget extends StatelessWidget {
                               : AssetImage(
                                   'assets/images/no_disponible.jpg',
                                   // height: 90,
-                                ),
+                                ) as ImageProvider,
                           fit: BoxFit.cover,
                         ),
                       ),

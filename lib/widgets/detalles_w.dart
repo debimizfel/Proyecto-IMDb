@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 class DetalleWidget extends StatelessWidget {
   const DetalleWidget({
-    this.pelicula,
-    Key key,
+    required this.pelicula,
+    Key? key,
   }) : super(key: key);
 
   final Pelicula pelicula;
@@ -48,7 +48,7 @@ class DetalleWidget extends StatelessWidget {
                       : AssetImage(
                           'assets/images/not_avaible.jpg',
                           // height: 90,
-                        ),
+                        ) as ImageProvider,
                   fit: BoxFit.cover,
                 ),
               ),
